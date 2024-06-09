@@ -4106,19 +4106,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Test\\.nuget\\packages\\": {}
+    "C:\\Users\\quadr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Test\\Desktop\\labochki\\Project\\DataBase\\DataBase.csproj",
-      "projectName": "DataBase",
-      "projectPath": "C:\\Users\\Test\\Desktop\\labochki\\Project\\DataBase\\DataBase.csproj",
-      "packagesPath": "C:\\Users\\Test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Test\\Desktop\\labochki\\Project\\DataBase\\obj\\",
+      "projectUniqueName": "C:\\Users\\quadr\\OneDrive\\Документы\\GitHub\\Filmder\\Backend\\Backend.csproj",
+      "projectName": "Backend",
+      "projectPath": "C:\\Users\\quadr\\OneDrive\\Документы\\GitHub\\Filmder\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\quadr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\quadr\\OneDrive\\Документы\\GitHub\\Filmder\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Test\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quadr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4126,6 +4126,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4176,11 +4177,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
