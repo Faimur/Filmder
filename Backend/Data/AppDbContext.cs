@@ -1,5 +1,6 @@
 ﻿using DataBase.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,12 @@ namespace DataBase.Data
 {
     public class AppDbContext : DbContext
     {
+        private readonly IConfiguration _configuration;
+
+        public AppDbContext(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         public DbSet<User> Users { get; set; }
         public DbSet<Friend> Friends { get; set; }
         public DbSet<Friendship> Friendships { get; set; }
@@ -23,8 +30,8 @@ namespace DataBase.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Замените параметры строки подключения на ваши реальные значения
-            optionsBuilder.UseSqlServer("Server=DESKTOP-GNPBIHK;Database=MyMovies;Integrated Security=True;TrustServerCertificate=True;");
+            var connectionString = _configuration.GetConnectionString("DefaultConnection");
+            optionsBuilder.UseSqlServer(connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
