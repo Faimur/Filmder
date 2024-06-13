@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.ComponentModel.DataAnnotations;
 namespace DataBase.Models
 {
@@ -20,7 +17,6 @@ namespace DataBase.Models
         public Director Director { get; set; }
         public int CountryID { get; set; }
         public Country Country { get; set; }
-        public ICollection<Score> Scores { get; set; }
         public ICollection<Liked> LikedMovies { get; set; }
     }
 }

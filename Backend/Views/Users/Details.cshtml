@@ -1,0 +1,30 @@
+﻿@model DataBase.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Logins)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Logins)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Passwords)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Passwords)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.UserID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
