@@ -4,8 +4,8 @@ namespace DataBase.Models
 {
     public class Director
     {
+        [Key]
         public int DirectorID { get; set; }
         public string Name { get; set; }
-        public ICollection<Movie> Movies { get; set; }
     }
 }

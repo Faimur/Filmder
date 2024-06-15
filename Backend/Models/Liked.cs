@@ -1,12 +1,13 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace DataBase.Models
 {
     public class Liked
     {
+        [ForeignKey("User")]
         public int UserID { get; set; }
-        public User User { get; set; }
+        [ForeignKey("Movie")]
         public int MovieID { get; set; }
-        public Movie Movie { get; set; }
     }
 }

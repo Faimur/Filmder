@@ -22,8 +22,7 @@ namespace DataBaseCreator.Controllers
         // GET: Movies
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Movies.Include(m => m.Country).Include(m => m.Director).Include(m => m.Genre).Include(m => m.Tag);
-            return View(await appDbContext.ToListAsync());
+            return View(await _context.Movies.ToListAsync());
         }
 
         // GET: Movies/Details/5
@@ -35,10 +34,6 @@ namespace DataBaseCreator.Controllers
             }
 
             var movie = await _context.Movies
-                .Include(m => m.Country)
-                .Include(m => m.Director)
-                .Include(m => m.Genre)
-                .Include(m => m.Tag)
                 .FirstOrDefaultAsync(m => m.MovieID == id);
             if (movie == null)
             {
@@ -51,10 +46,6 @@ namespace DataBaseCreator.Controllers
         // GET: Movies/Create
         public IActionResult Create()
         {
-            ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID");
-            ViewData["DirectorID"] = new SelectList(_context.Directors, "DirectorID", "DirectorID");
-            ViewData["GenreID"] = new SelectList(_context.Genres, "GenreID", "GenreID");
-            ViewData["TagID"] = new SelectList(_context.Tags, "TagID", "TagID");
             return View();
         }
 
@@ -71,10 +62,6 @@ namespace DataBaseCreator.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID", movie.CountryID);
-            ViewData["DirectorID"] = new SelectList(_context.Directors, "DirectorID", "DirectorID", movie.DirectorID);
-            ViewData["GenreID"] = new SelectList(_context.Genres, "GenreID", "GenreID", movie.GenreID);
-            ViewData["TagID"] = new SelectList(_context.Tags, "TagID", "TagID", movie.TagID);
             return View(movie);
         }
 
@@ -91,10 +78,6 @@ namespace DataBaseCreator.Controllers
             {
                 return NotFound();
             }
-            ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID", movie.CountryID);
-            ViewData["DirectorID"] = new SelectList(_context.Directors, "DirectorID", "DirectorID", movie.DirectorID);
-            ViewData["GenreID"] = new SelectList(_context.Genres, "GenreID", "GenreID", movie.GenreID);
-            ViewData["TagID"] = new SelectList(_context.Tags, "TagID", "TagID", movie.TagID);
             return View(movie);
         }
 
@@ -130,10 +113,6 @@ namespace DataBaseCreator.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID", movie.CountryID);
-            ViewData["DirectorID"] = new SelectList(_context.Directors, "DirectorID", "DirectorID", movie.DirectorID);
-            ViewData["GenreID"] = new SelectList(_context.Genres, "GenreID", "GenreID", movie.GenreID);
-            ViewData["TagID"] = new SelectList(_context.Tags, "TagID", "TagID", movie.TagID);
             return View(movie);
         }
 
@@ -146,10 +125,6 @@ namespace DataBaseCreator.Controllers
             }
 
             var movie = await _context.Movies
-                .Include(m => m.Country)
-                .Include(m => m.Director)
-                .Include(m => m.Genre)
-                .Include(m => m.Tag)
                 .FirstOrDefaultAsync(m => m.MovieID == id);
             if (movie == null)
             {

@@ -5,9 +5,9 @@ namespace DataBase.Models
 {
     public class User
     {
+        [Key]
         public int UserID { get; set; }
-        public string Logins { get; set; }
-        public string Passwords { get; set; }
-        public ICollection<Liked> LikedMovies { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
     }
 }

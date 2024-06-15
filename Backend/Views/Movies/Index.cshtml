@@ -19,19 +19,19 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tag)
+                @Html.DisplayNameFor(model => model.TagID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Genre)
+                @Html.DisplayNameFor(model => model.GenreID)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Picture)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Director)
+                @Html.DisplayNameFor(model => model.DirectorID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Country)
+                @Html.DisplayNameFor(model => model.CountryID)
             </th>
             <th></th>
         </tr>
@@ -46,19 +46,19 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Tag.TagID)
+                @Html.DisplayFor(modelItem => item.TagID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Genre.GenreID)
+                @Html.DisplayFor(modelItem => item.GenreID)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Picture)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Director.DirectorID)
+                @Html.DisplayFor(modelItem => item.DirectorID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Country.CountryID)
+                @Html.DisplayFor(modelItem => item.CountryID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.MovieID">Edit</a> |

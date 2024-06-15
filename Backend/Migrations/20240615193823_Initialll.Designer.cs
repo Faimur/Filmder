@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBaseCreator.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240612233404_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240615193823_Initialll")]
+    partial class Initialll
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -77,17 +77,13 @@ namespace DataBaseCreator.Migrations
 
             modelBuilder.Entity("DataBase.Models.Liked", b =>
                 {
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
-
                     b.Property<int>("MovieID")
                         .HasColumnType("int");
 
-                    b.HasKey("UserID", "MovieID");
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
 
-                    b.HasIndex("MovieID");
-
-                    b.ToTable("LikedMovies");
+                    b.ToTable("Liked");
                 });
 
             modelBuilder.Entity("DataBase.Models.Movie", b =>
@@ -124,14 +120,6 @@ namespace DataBaseCreator.Migrations
 
                     b.HasKey("MovieID");
 
-                    b.HasIndex("CountryID");
-
-                    b.HasIndex("DirectorID");
-
-                    b.HasIndex("GenreID");
-
-                    b.HasIndex("TagID");
-
                     b.ToTable("Movies");
                 });
 
@@ -160,101 +148,17 @@ namespace DataBaseCreator.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserID"));
 
-                    b.Property<string>("Logins")
+                    b.Property<string>("Login")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Passwords")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Liked", b =>
-                {
-                    b.HasOne("DataBase.Models.Movie", "Movie")
-                        .WithMany("LikedMovies")
-                        .HasForeignKey("MovieID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DataBase.Models.User", "User")
-                        .WithMany("LikedMovies")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Movie");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Movie", b =>
-                {
-                    b.HasOne("DataBase.Models.Country", "Country")
-                        .WithMany("Movies")
-                        .HasForeignKey("CountryID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DataBase.Models.Director", "Director")
-                        .WithMany("Movies")
-                        .HasForeignKey("DirectorID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DataBase.Models.Genre", "Genre")
-                        .WithMany("Movies")
-                        .HasForeignKey("GenreID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DataBase.Models.Tag", "Tag")
-                        .WithMany("Movies")
-                        .HasForeignKey("TagID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Country");
-
-                    b.Navigation("Director");
-
-                    b.Navigation("Genre");
-
-                    b.Navigation("Tag");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Country", b =>
-                {
-                    b.Navigation("Movies");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Director", b =>
-                {
-                    b.Navigation("Movies");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Genre", b =>
-                {
-                    b.Navigation("Movies");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Movie", b =>
-                {
-                    b.Navigation("LikedMovies");
-                });
-
-            modelBuilder.Entity("DataBase.Models.Tag", b =>
-                {
-                    b.Navigation("Movies");
-                });
-
-            modelBuilder.Entity("DataBase.Models.User", b =>
-                {
-                    b.Navigation("LikedMovies");
                 });
 #pragma warning restore 612, 618
         }

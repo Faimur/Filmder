@@ -54,7 +54,7 @@ namespace DataBaseCreator.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserID,Logins,Passwords")] User user)
+        public async Task<IActionResult> Create([Bind("UserID,Login,Password")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace DataBaseCreator.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserID,Logins,Passwords")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("UserID,Login,Password")] User user)
         {
             if (id != user.UserID)
             {
