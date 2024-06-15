@@ -1,0 +1,46 @@
+.explore-films{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-films h1{
+    color: #00DE0E;
+    font-size: 500;
+}
+.explore-films button{
+    background-color: #141414;
+    color: #EBFFEC;
+    border: thin solid #00DE0E;
+    border-radius: 50px;
+    padding: 1vw 2.3vw;
+    cursor: pointer;
+    font-size: max(1vw,13px);
+}
+
+.explore-films button:hover{
+    
+    background-color: #00DE0E;
+}
+
+.explore-films-list{
+    color: #00DE0E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-y: scroll;
+}
+
+.explore-films-list::-webkit-scrollbar{
+    display: none;
+}
+
+.explore-films hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #00DE0E;
+    border: none;
+}

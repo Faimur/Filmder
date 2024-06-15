@@ -1,0 +1,68 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0px;
+    list-style: none;
+    color: #00DE0E;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.search-container-info{
+    gap: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.film-image{
+    height: 300px;
+    width: 79vw;
+    justify-content: center;
+    background: url("/NOmoneyNohoney.jpg") no-repeat;
+    position: relative;
+
+}
+
+.search-container-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+
+.like{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #141414;
+    border: thin solid #00DE0E;
+    cursor: pointer;
+
+}
+
+.dislike{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #141414;
+    border: thin solid tomato;
+    cursor: pointer;
+
+}
+
+.like:hover{
+    border-radius: 5px;
+    color: white;
+    background-color: #00DE0E;
+    border: thin solid #00DE0E;
+
+}
+
+.dislike:hover{
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    border: thin solid tomato;
+
+}

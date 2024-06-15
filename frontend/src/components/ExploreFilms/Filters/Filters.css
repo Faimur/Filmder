@@ -1,0 +1,30 @@
+.genre-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+
+.genre-list::-webkit-scrollbar{
+    display: none;
+}
+
+.genre-list-item{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #0EA718;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.genre-list .active{
+    padding-bottom: 2px;
+    color: #00DE0E;
+    border-bottom: 2px solid #00DE0E;
+}
