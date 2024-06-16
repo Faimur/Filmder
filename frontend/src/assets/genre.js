@@ -1,98 +1,280 @@
+import image1 from './image1.jpg'
+import image2 from './image2.jpg'
+import image3 from './image3.jpg'
+import image4 from './image4.jpg'
+import image5 from './image5.jpg'
+
+
+
 export const genre_list = [
+    {"GenreID":1,"Name":"action"},
+    {"GenreID":2,"Name":"adventure"},
+    {"GenreID":3,"Name":"animation"},
+    {"GenreID":4,"Name":"biography"},
+    {"GenreID":5,"Name":"comedy"},
+    {"GenreID":6,"Name":"crime"},
+    {"GenreID":7,"Name":"documentary"},
+    {"GenreID":8,"Name":"drama"},
+    {"GenreID":9,"Name":"family"},
+    {"GenreID":10,"Name":"fantasy"},
+    {"GenreID":11,"Name":"history"},
+    {"GenreID":12,"Name":"horror"},
+    {"GenreID":13,"Name":"musical"},
+    {"GenreID":14,"Name":"mystery"},
+    {"GenreID":15,"Name":"romance"},
+    {"GenreID":16,"Name":"science fiction"},
+    {"GenreID":17,"Name":"thriller"},
+    {"GenreID":18,"Name":"war"},
+    {"GenreID":19,"Name":"western"},
+    {"GenreID":20,"Name":"superhero"},
+    {"GenreID":21,"Name":"indie"},
+    {"GenreID":22,"Name":"noir"},
+    {"GenreID":23,"Name":"cult classic"},
+    {"GenreID":24,"Name":"epic"},
+    {"GenreID":25,"Name":"short film"},
+    {"GenreID":26,"Name":"silent film"},
+    {"GenreID":27,"Name":"foreign film"},
+    {"GenreID":28,"Name":"romantic comedy"},
+    {"GenreID":29,"Name":"psychological"},
+    {"GenreID":30,"Name":"sports"},
+    {"GenreID":31,"Name":"historical fiction"},
+    {"GenreID":32,"Name":"post-apocalyptic"},
+    {"GenreID":33,"Name":"steampunk"},
+    {"GenreID":34,"Name":"mockumentary"},
+    {"GenreID":35,"Name":"slasher"},
+    {"GenreID":36,"Name":"black comedy"},
+    {"GenreID":37,"Name":"legal drama"},
+    {"GenreID":38,"Name":"political thriller"},
+    {"GenreID":39,"Name":"space opera"},
+    {"GenreID":40,"Name":"disaster"},
+    {"GenreID":41,"Name":"spy"},
+    {"GenreID":42,"Name":"road movie"},
+    {"GenreID":43,"Name":"dance"},
+    {"GenreID":44,"Name":"fantasy comedy"},
+    {"GenreID":45,"Name":"dark fantasy"},
+    {"GenreID":46,"Name":"urban fantasy"},
+    {"GenreID":47,"Name":"science fantasy"},
+    {"GenreID":48,"Name":"parody"},
+    {"GenreID":49,"Name":"satire"},
+    {"GenreID":50,"Name":"heist"}
+]
+
+export const tags_list = [
+    {"TagID":1,"Name":"action"},
+    {"TagID":2,"Name":"comedy"},
+    {"TagID":3,"Name":"drama"},
+    {"TagID":4,"Name":"thriller"},
+    {"TagID":5,"Name":"horror"},
+    {"TagID":6,"Name":"romance"},
+    {"TagID":7,"Name":"sciencefiction"},
+    {"TagID":8,"Name":"fantasy"},
+    {"TagID":9,"Name":"animation"},
+    {"TagID":10,"Name":"adventure"},
+    {"TagID":11,"Name":"mystery"},
+    {"TagID":12,"Name":"crime"},
+    {"TagID":13,"Name":"documentary"},
+    {"TagID":14,"Name":"biography"},
+    {"TagID":15,"Name":"family"},
+    {"TagID":16,"Name":"musical"},
+    {"TagID":17,"Name":"war"},
+    {"TagID":18,"Name":"history"},
+    {"TagID":19,"Name":"western"},
+    {"TagID":20,"Name":"sport"},
+    {"TagID":21,"Name":"superhero"},
+    {"TagID":22,"Name":"indie"},
+    {"TagID":23,"Name":"noir"},
+    {"TagID":24,"Name":"cultclassic"},
+    {"TagID":25,"Name":"epic"},
+    {"TagID":26,"Name":"shortfilm"},
+    {"TagID":27,"Name":"silentfilm"},
+    {"TagID":28,"Name":"foreignfilm"},
+    {"TagID":29,"Name":"romcom"},
+    {"TagID":30,"Name":"psychological"},
+    {"TagID":31,"Name":"dreams"},
+    {"TagID":32,"Name":"prison"},
+    {"TagID":33,"Name":"holocaust"}
+]
+
+export const directir_list = [
+    {"DirectorID":1,"Name":"Christopher Nolan"},
+    {"DirectorID":2,"Name":"Quentin Tarantino"},
+    {"DirectorID":3,"Name":"Martin Scorsese"},
+    {"DirectorID":4,"Name":"Steven Spielberg"},
+    {"DirectorID":5,"Name":"David Fincher"},
+    {"DirectorID":6,"Name":"Alfred Hitchcock"},
+    {"DirectorID":7,"Name":"Stanley Kubrick"},
+    {"DirectorID":8,"Name":"Francis Ford Coppola"},
+    {"DirectorID":9,"Name":"Clint Eastwood"},
+    {"DirectorID":10,"Name":"James Cameron"},
+    {"DirectorID":11,"Name":"Peter Jackson"},
+    {"DirectorID":12,"Name":"Ridley Scott"},
+    {"DirectorID":13,"Name":"Wes Anderson"},
+    {"DirectorID":14,"Name":"Greta Gerwig"},
+    {"DirectorID":15,"Name":"Denis Villeneuve"},
+    {"DirectorID":16,"Name":"Taika Waititi"},
+    {"DirectorID":17,"Name":"Spike Lee"},
+    {"DirectorID":18,"Name":"Bong Joon-ho"},
+    {"DirectorID":19,"Name":"Alejandro Gonzalez Inarritu"},
+    {"DirectorID":20,"Name":"Jordan Peele"},
+    {"DirectorID":21,"Name":"Tim Burton"},
+    {"DirectorID":22,"Name":"Coen Brothers"},
+    {"DirectorID":23,"Name":"Woody Allen"},
+    {"DirectorID":24,"Name":"Sofia Coppola"},
+    {"DirectorID":25,"Name":"David Lynch"},
+    {"DirectorID":26,"Name":"Pedro Almodovar"},
+    {"DirectorID":27,"Name":"Darren Aronofsky"},
+    {"DirectorID":28,"Name":"Paul Thomas Anderson"},
+    {"DirectorID":29,"Name":"Guillermo del Toro"},
+    {"DirectorID":30,"Name":"Michael Bay"},
+    {"DirectorID":31,"Name":"Zack Snyder"},
+    {"DirectorID":32,"Name":"Ang Lee"},
+    {"DirectorID":33,"Name":"Kathryn Bigelow"},
+    {"DirectorID":34,"Name":"J.J. Abrams"},
+    {"DirectorID":35,"Name":"Ron Howard"},
+    {"DirectorID":36,"Name":"Guy Ritchie"},
+    {"DirectorID":37,"Name":"John Woo"},
+    {"DirectorID":38,"Name":"Luc Besson"},
+    {"DirectorID":39,"Name":"Robert Zemeckis"},
+    {"DirectorID":40,"Name":"Spike Jonze"},
+    {"DirectorID":41,"Name":"Roman Polanski"},
+    {"DirectorID":42,"Name":"John Carpenter"},
+    {"DirectorID":43,"Name":"Terrence Malick"},
+    {"DirectorID":44,"Name":"Lars von Trier"},
+    {"DirectorID":45,"Name":"Michael Mann"},
+    {"DirectorID":46,"Name":"George Lucas"},
+    {"DirectorID":47,"Name":"Oliver Stone"},
+    {"DirectorID":48,"Name":"Richard Linklater"},
+    {"DirectorID":49,"Name":"Baz Luhrmann"},
+    {"DirectorID":50,"Name":"John Hughes"},
+    {"DirectorID":51,"Name":"Gus Van Sant"},
+    {"DirectorID":52,"Name":"Rob Reiner"},
+    {"DirectorID":53,"Name":"Mel Brooks"},
+    {"DirectorID":54,"Name":"Francois Truffaut"},
+    {"DirectorID":55,"Name":"Jean-Luc Godard"},
+    {"DirectorID":56,"Name":"Akira Kurosawa"},
+    {"DirectorID":57,"Name":"Hayao Miyazaki"},
+    {"DirectorID":58,"Name":"Satyajit Ray"},
+    {"DirectorID":59,"Name":"Steven Soderbergh"},
+    {"DirectorID":60,"Name":"Danny Boyle"},
+    {"DirectorID":61,"Name":"Ken Loach"},
+    {"DirectorID":62,"Name":"Abbas Kiarostami"},
+    {"DirectorID":63,"Name":"Wong Kar-wai"},
+    {"DirectorID":64,"Name":"Park Chan-wook"},
+    {"DirectorID":65,"Name":"David O. Russell"},
+    {"DirectorID":66,"Name":"Christopher McQuarrie"},
+    {"DirectorID":67,"Name":"M. Night Shyamalan"},
+    {"DirectorID":68,"Name":"Gaspar Noe"},
+    {"DirectorID":69,"Name":"Yorgos Lanthimos"},
+    {"DirectorID":70,"Name":"Damien Chazelle"},
+    {"DirectorID":71,"Name":"Frank Darabont"}
+]
+
+export const country_list = [
+    {"CountryID":1,"Name":"Australia"},{"CountryID":2,"Name":"Austria"},{"CountryID":3,"Name":"Azerbaijan"},
+    {"CountryID":4,"Name":"Albania"},{"CountryID":5,"Name":"Algeria"},{"CountryID":6,"Name":"Angola"},
+    {"CountryID":7,"Name":"Andorra"},{"CountryID":8,"Name":"Argentina"},{"CountryID":9,"Name":"Armenia"},{"CountryID":10,"Name":"Afghanistan"},
+    {"CountryID":11,"Name":"Bahamas"},{"CountryID":12,"Name":"Bangladesh"},{"CountryID":13,"Name":"Barbados"},{"CountryID":14,"Name":"Bahrain"},
+    {"CountryID":15,"Name":"Belarus"},{"CountryID":16,"Name":"Belize"},{"CountryID":17,"Name":"Belgium"},{"CountryID":18,"Name":"Benin"},
+    {"CountryID":19,"Name":"Bulgaria"},{"CountryID":20,"Name":"Bolivia"},{"CountryID":21,"Name":"Bosnia and Herzegovina"},{"CountryID":22,"Name":"Botswana"},
+    {"CountryID":23,"Name":"Brazil"},{"CountryID":24,"Name":"Brunei"},{"CountryID":25,"Name":"Burkina Faso"},{"CountryID":26,"Name":"Burundi"},
+    {"CountryID":27,"Name":"Bhutan"},{"CountryID":28,"Name":"Vanuatu"},{"CountryID":29,"Name":"Vatican"},{"CountryID":30,"Name":"United Kingdom"},
+    {"CountryID":31,"Name":"Hungary"},{"CountryID":32,"Name":"Venezuela"},{"CountryID":33,"Name":"Vietnam"},{"CountryID":34,"Name":"Gabon"},
+    {"CountryID":35,"Name":"Haiti"},{"CountryID":36,"Name":"Guyana"},{"CountryID":37,"Name":"Gambia"},{"CountryID":38,"Name":"Ghana"},
+    {"CountryID":39,"Name":"Guatemala"},{"CountryID":40,"Name":"Guinea"},{"CountryID":41,"Name":"Germany"},{"CountryID":42,"Name":"Honduras"},
+    {"CountryID":43,"Name":"Grenada"},{"CountryID":44,"Name":"Greece"},{"CountryID":45,"Name":"Georgia"},{"CountryID":46,"Name":"Denmark"},
+    {"CountryID":47,"Name":"Djibouti"},{"CountryID":48,"Name":"Dominica"},{"CountryID":49,"Name":"DR Congo"},{"CountryID":50,"Name":"Egypt"},
+    {"CountryID":51,"Name":"Zambia"},{"CountryID":52,"Name":"Zimbabwe"},{"CountryID":53,"Name":"Israel"},{"CountryID":54,"Name":"India"},
+    {"CountryID":55,"Name":"Indonesia"},{"CountryID":56,"Name":"Jordan"},{"CountryID":57,"Name":"Iraq"},{"CountryID":58,"Name":"Iran"},
+    {"CountryID":59,"Name":"Ireland"},{"CountryID":60,"Name":"Iceland"},{"CountryID":61,"Name":"Spain"},{"CountryID":62,"Name":"Italy"},
+    {"CountryID":63,"Name":"Yemen"},{"CountryID":64,"Name":"Cape Verde"},{"CountryID":65,"Name":"Kazakhstan"},{"CountryID":66,"Name":"Cambodia"},
+    {"CountryID":67,"Name":"Cameroon"},{"CountryID":68,"Name":"Canada"},{"CountryID":69,"Name":"Qatar"},{"CountryID":70,"Name":"Kenya"},
+    {"CountryID":71,"Name":"Cyprus"},{"CountryID":72,"Name":"Kyrgyzstan"},{"CountryID":73,"Name":"Kiribati"},{"CountryID":74,"Name":"China"},
+    {"CountryID":75,"Name":"Colombia"},{"CountryID":76,"Name":"Comoros"},{"CountryID":77,"Name":"Congo"},{"CountryID":78,"Name":"Costa Rica"},
+    {"CountryID":79,"Name":"Cote d\\'Ivoire"},{"CountryID":80,"Name":"Cuba"},{"CountryID":81,"Name":"Kuwait"},{"CountryID":82,"Name":"Laos"},
+    {"CountryID":83,"Name":"Latvia"},{"CountryID":84,"Name":"Lesotho"},{"CountryID":85,"Name":"Liberia"},{"CountryID":86,"Name":"Lebanon"},
+    {"CountryID":87,"Name":"Libya"},{"CountryID":88,"Name":"Lithuania"},{"CountryID":89,"Name":"Liechtenstein"},
+    {"CountryID":90,"Name":"Luxembourg"},{"CountryID":91,"Name":"Mauritius"},{"CountryID":92,"Name":"Mauritania"},
+    {"CountryID":93,"Name":"Madagascar"},{"CountryID":94,"Name":"Macedonia"},{"CountryID":95,"Name":"Malawi"},{"CountryID":96,"Name":"Malaysia"},
+    {"CountryID":97,"Name":"Mali"},{"CountryID":98,"Name":"Maldives"},{"CountryID":99,"Name":"Malta"},{"CountryID":100,"Name":"Morocco"},
+    {"CountryID":101,"Name":"Marshall Islands"},{"CountryID":102,"Name":"Mexico"},{"CountryID":103,"Name":"Micronesia"},
+    {"CountryID":104,"Name":"Mozambique"},{"CountryID":105,"Name":"Moldova"},{"CountryID":106,"Name":"Monaco"},{"CountryID":107,"Name":"Mongolia"},
+    {"CountryID":108,"Name":"Myanmar"},{"CountryID":109,"Name":"Namibia"},{"CountryID":110,"Name":"Nauru"},{"CountryID":111,"Name":"Nepal"},
+    {"CountryID":112,"Name":"Niger"},{"CountryID":113,"Name":"Nigeria"},{"CountryID":114,"Name":"Netherlands"},
+    {"CountryID":115,"Name":"Nicaragua"},{"CountryID":116,"Name":"New Zealand"},{"CountryID":117,"Name":"Norway"},{"CountryID":118,"Name":"UAE"},
+    {"CountryID":119,"Name":"Oman"},{"CountryID":120,"Name":"Pakistan"},{"CountryID":121,"Name":"Palau"},{"CountryID":122,"Name":"Panama"},
+    {"CountryID":123,"Name":"Papua New Guinea"},{"CountryID":124,"Name":"Paraguay"},{"CountryID":125,"Name":"Peru"},
+    {"CountryID":126,"Name":"Poland"},{"CountryID":127,"Name":"Portugal"},{"CountryID":128,"Name":"Russia"},{"CountryID":129,"Name":"Rwanda"},
+    {"CountryID":130,"Name":"Romania"},{"CountryID":131,"Name":"El Salvador"},{"CountryID":132,"Name":"Samoa"},
+    {"CountryID":133,"Name":"San Marino"},{"CountryID":134,"Name":"Sao Tome and Principe"},{"CountryID":135,"Name":"Saudi Arabia"},
+    {"CountryID":136,"Name":"Swaziland"},{"CountryID":137,"Name":"Seychelles"},{"CountryID":138,"Name":"Senegal"},
+    {"CountryID":139,"Name":"Saint Vincent and the Grenadines"},{"CountryID":140,"Name":"Saint Kitts and Nevis"},
+    {"CountryID":141,"Name":"Saint Lucia"},{"CountryID":142,"Name":"Serbia"},{"CountryID":143,"Name":"Singapore"},
+    {"CountryID":144,"Name":"Syria"},{"CountryID":145,"Name":"Slovakia"},{"CountryID":146,"Name":"Slovenia"},{"CountryID":147,"Name":"USA"},
+    {"CountryID":148,"Name":"Solomon Islands"},{"CountryID":149,"Name":"Somalia"},{"CountryID":150,"Name":"Sudan"},
+    {"CountryID":151,"Name":"Suriname"},{"CountryID":152,"Name":"Sierra Leone"},{"CountryID":153,"Name":"Tajikistan"},
+    {"CountryID":154,"Name":"Thailand"},{"CountryID":155,"Name":"Tanzania"},{"CountryID":156,"Name":"Togo"},{"CountryID":157,"Name":"Tonga"},
+    {"CountryID":158,"Name":"Trinidad and Tobago"},{"CountryID":159,"Name":"Tuvalu"},{"CountryID":160,"Name":"Tunisia"},
+    {"CountryID":161,"Name":"Turkmenistan"},{"CountryID":162,"Name":"Turkey"},{"CountryID":163,"Name":"Uganda"},
+    {"CountryID":164,"Name":"Uzbekistan"},{"CountryID":165,"Name":"Ukraine"},{"CountryID":166,"Name":"Uruguay"},{"CountryID":167,"Name":"Fiji"},
+    {"CountryID":168,"Name":"Philippines"},{"CountryID":169,"Name":"Finland"},{"CountryID":170,"Name":"France"},{"CountryID":171,"Name":"Croatia"},
+    {"CountryID":172,"Name":"Central African Republic"},{"CountryID":173,"Name":"Chad"},{"CountryID":174,"Name":"Montenegro"},
+    {"CountryID":175,"Name":"Czech Republic"},{"CountryID":176,"Name":"Chile"},{"CountryID":177,"Name":"Switzerland"},
+    {"CountryID":178,"Name":"Sweden"},{"CountryID":179,"Name":"Sri Lanka"},{"CountryID":180,"Name":"Ecuador"},
+    {"CountryID":181,"Name":"Equatorial Guinea"},{"CountryID":182,"Name":"Eritrea"},{"CountryID":183,"Name":"Eswatini"},
+    {"CountryID":184,"Name":"Estonia"},{"CountryID":185,"Name":"Ethiopia"},{"CountryID":186,"Name":"South Korea"},
+    {"CountryID":187,"Name":"South Africa"},{"CountryID":188,"Name":"Jamaica"},{"CountryID":189,"Name":"Japan"}
+]
+
+export const movie_list = [
     {
-        "Genre_id":3,
-        "Genre_name":"Анимация"
+        "MovieID":1,
+        "Name":"Inception",
+        "Description":"A skilled thief enters people's dreams to steal their secrets in this mind-bending thriller.",
+        "TagID":31,
+        "GenreID":16,
+        "Picture":image1,
+        "DirectorID":1,
+        "CountryID":147
     },
     {
-        "Genre_id":4,
-        "Genre_name":"Биография"
+        "MovieID":2,
+        "Name":"Pulp Fiction",
+        "Description":"Several interconnected stories of crime in Los Angeles intertwine in unexpected ways.",
+        "TagID":12,
+        "GenreID":8,
+        "Picture":image2,
+        "DirectorID":2,
+        "CountryID":147
     },
     {
-        "Genre_id":1,
-        "Genre_name":"Боевик"
+        "MovieID":3,
+        "Name":"The Shawshank Redemption",
+        "Description":"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "TagID":32,
+        "GenreID":8,
+        "Picture":image3,
+        "DirectorID":71,
+        "CountryID":147
     },
     {
-        "Genre_id":22,
-        "Genre_name":"Вестерн"
+        "MovieID":4,
+        "Name":"The Dark Knight",
+        "Description":"When the menace known as The Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "TagID":21,
+        "GenreID":1,
+        "Picture":image4,
+        "DirectorID":1,
+        "CountryID":147
     },
     {
-        "Genre_id":21,
-        "Genre_name":"Военный"
-    },
-    {
-        "Genre_id":16,
-        "Genre_name":"Детектив"
-    },
-    {
-        "Genre_id":7,
-        "Genre_name":"Документальный"
-    },
-    {
-        "Genre_id":8,
-        "Genre_name":"Драма"
-    },
-    {
-        "Genre_id":12,
-        "Genre_name":"Исторический"
-    },
-    {
-        "Genre_id":5,
-        "Genre_name":"Комедия"
-    },
-    {
-        "Genre_id":6,
-        "Genre_name":"Криминал"
-    },
-    {
-        "Genre_id":17,
-        "Genre_name":"Мелодрама"
-    },
-    {
-        "Genre_id":14,
-        "Genre_name":"Музыкальный"
-    },
-    {
-        "Genre_id":15,
-        "Genre_name":"Мюзикл"
-    },
-    {
-        "Genre_id":18,
-        "Genre_name":"Научная фантастика"
-    },
-    {
-        "Genre_id":2,
-        "Genre_name":"Приключения"
-    },
-    {
-        "Genre_id":9,
-        "Genre_name":"Семейный"
-    },
-    {
-        "Genre_id":19,
-        "Genre_name":"Спорт"
-    },
-    {
-        "Genre_id":24,
-        "Genre_name":"Супергеройский"
-    },
-    {
-        "Genre_id":20,
-        "Genre_name":"Триллер"
-    },
-    {
-        "Genre_id":13,
-        "Genre_name":"Ужасы"
-    },
-    {
-        "Genre_id":23,
-        "Genre_name":"Фантастика"
-    },
-    {
-        "Genre_id":11,
-        "Genre_name":"Фильм-нуар"
-    },
-    {
-        "Genre_id":10,
-        "Genre_name":"Фэнтези"
+        "MovieID":5,
+        "Name":"Schindler's List",
+        "Description":"In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+        "TagID":33,
+        "GenreID":4,
+        "Picture":image5,
+        "DirectorID":4,
+        "CountryID":147
     }
+
 ]

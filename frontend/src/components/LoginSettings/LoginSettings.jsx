@@ -5,7 +5,6 @@ import Account from '../../pages/Account/Account'
 const LoginSettings = () => {
   return (
     <div className='login-settings'>
-      <Account/>
     </div>
   )
 }

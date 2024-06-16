@@ -6,7 +6,6 @@ import Account from '../../pages/Account/Account'
 const LikesPage = () => {
   return (
     <div>
-        <Account/>
     </div>
   )
 }

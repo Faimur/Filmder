@@ -5,21 +5,6 @@
     margin: 20px 0px;
 }
 
-.account-view{
-    justify-content: center;
-    padding-top: 40px;
-    color: white;
-    margin: 30px auto;
-    height: 300px;
-    width: 79vw;
-    background: url("/16931478991553416.png") no-repeat;
-    position: relative;
-}
-
-.account-view h1{
-    padding-left: 50px;
-}
-
 .logout button{
     width: 79vw;
     background-color: #141414;
@@ -37,28 +22,3 @@
     color: #141414;
 }
 
-.account-navbar{
-    padding-left: 80px;
-    padding-right: 80px;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #00DE0E;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 20px;
-    cursor: pointer;
-    color: #141414;
-    transition: 0.3s;
-}
-
-.account-navbar button{
-    border: none;
-    background-color: #00DE0E;
-}
-
-.account-navbar .active{
-    padding-bottom: 2px;
-    color: #00DE0E;
-    border-bottom: 2px solid #141414;
-    background-color: #141414   ;
-}

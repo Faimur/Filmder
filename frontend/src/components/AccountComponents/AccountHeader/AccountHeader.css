@@ -1,0 +1,14 @@
+.account-view{
+    justify-content: center;
+    padding-top: 40px;
+    color: white;
+    margin: 30px auto;
+    height: 300px;
+    width: 79vw;
+    background: url("/16931478991553416.png") no-repeat;
+    position: relative;
+}
+
+.account-view h1{
+    padding-left: 50px;
+}

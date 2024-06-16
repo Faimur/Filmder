@@ -8,8 +8,8 @@ const Filters = ({category, setCategory}) => {
       <div className="genre-list">
         {genre_list.map((item, index) => {
           return (
-            <div onClick={() => setCategory(prev => prev===item.Genre_name?"All":item.Genre_name)} key={index} className="genre-list-item">
-              <li className={category===item.Genre_name?"active":""}>{item.Genre_name}</li>
+            <div onClick={() => setCategory(prev => prev===item.Name?"All":item.Name)} key={index} className="genre-list-item">
+              <li className={category===item.Name?"active":""}>{item.Name}</li>
             </div>
           ) 
         })}
