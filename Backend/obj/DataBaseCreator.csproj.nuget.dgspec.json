@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Test\\Desktop\\labochki\\DataBaseCreator\\DataBaseCreator.csproj": {}
+    "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\DataBaseCreator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Test\\Desktop\\labochki\\DataBaseCreator\\DataBaseCreator.csproj": {
+    "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\DataBaseCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Test\\Desktop\\labochki\\DataBaseCreator\\DataBaseCreator.csproj",
+        "projectUniqueName": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\DataBaseCreator.csproj",
         "projectName": "DataBaseCreator",
-        "projectPath": "C:\\Users\\Test\\Desktop\\labochki\\DataBaseCreator\\DataBaseCreator.csproj",
-        "packagesPath": "C:\\Users\\Test\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Test\\Desktop\\labochki\\DataBaseCreator\\obj\\",
+        "projectPath": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\DataBaseCreator.csproj",
+        "packagesPath": "C:\\Users\\79636\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Test\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\79636\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
