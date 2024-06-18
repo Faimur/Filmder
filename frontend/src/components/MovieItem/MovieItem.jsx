@@ -1,7 +1,9 @@
 import React from 'react'
 import './MovieItem.css'
+import Search from '../../pages/Search/Search'
 
 const MovieItem = ({id, name, description, tag, genre, picture, director, country}) => {
+
 
   return (
     <div className='movie-item'>
@@ -10,7 +12,11 @@ const MovieItem = ({id, name, description, tag, genre, picture, director, countr
         </div>
         <div className="movie-item-info">
             <div className="movie-item-name-info">
-                <h3>{name}</h3>
+                <a href="#" onClick={() =>{
+                  console.log(name);
+                  <Search key={id} name={name} description={description} tag={tag} genre={genre} picture={picture} director={director} country={country}/>
+                }}><h3>{name}</h3></a>
+                
             </div>
             <p className="film-item-description">{description}</p>
             <div className="film-item-filter">

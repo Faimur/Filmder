@@ -16,9 +16,9 @@ const LogIn = () => {
         <div className="login-container-right">
           <h3>Log In</h3>
           <form className="login-container-right-input">
-            <input type="text" id="" placeholder='Your login' required />
-            <input type="password" id='' placeholder='Your password' required/>
-            <button onClick={() => navigate('/home')}>Next</button>
+            <input type="text" id="Ylogin" required placeholder='Your login'/>
+            <input type="password" id='Ypassword' required placeholder='Your password'/>
+            <button onClick={() => {/*if (document.required === false && document.getElementById(Ypassword).required === true)*/ navigate('/home')}}>Next</button>
           </form>
           <h4>First time here?</h4>
           <button onClick={() => navigate('/authorisation')}>Join Filmdr</button>

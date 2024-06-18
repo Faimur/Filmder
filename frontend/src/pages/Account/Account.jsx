@@ -11,20 +11,22 @@ const Account = () => {
     const navigate = useNavigate();
 
   return (
-    <div className='account'>
-      <AccountHeader/>
-      <Routes>
-        <Route path='/account/likes' element={<LikesPage/>} />
-        <Route path='/account/settings' element={<LoginSettings/>} />
-      </Routes>
-      <AccountNavbar/>
+    <>
+      <div className='account'>
+        <AccountHeader/>
+        <AccountNavbar/>
+        <Routes>
+          <Route path='/account/likes' element={<LikesPage />} />
+          <Route path='/account/settings' element={<LoginSettings />} />
+        </Routes>
 
-      
-      <div className="logout">
-        <button onClick={() => navigate('/')}>Log Out</button>
+        
+        <div className="logout">
+          <button onClick={() => navigate('/')}>Log Out</button>
+        </div>
+        <Footer/>
       </div>
-      <Footer/>
-    </div>
+    </>
   )
 }
 

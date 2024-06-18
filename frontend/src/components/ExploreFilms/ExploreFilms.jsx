@@ -20,7 +20,7 @@ const ExploreFilms = () => {
       <button onClick={toggle} className='filters-btn'>Filters</button>
       {isOpen && <Filters  category={category} setCategory={setCategory}/>}
       <hr />
-      <MovieDisplay category={category} setCategory={setCategory}/>
+      <MovieDisplay category={category}/>
       {/*<div className='explore-films-list'> </div>*/}
     </div>
   )

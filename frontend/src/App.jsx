@@ -7,7 +7,7 @@ import Authorisation from './pages/Authorisation/Authorisation'
 import Search from './pages/Search/Search'
 import Account from './pages/Account/Account'
 import LoginSettings from './components/LoginSettings/LoginSettings'
-
+import LikesPage from './components/LikesPage/LikesPage'
 const App = () => {
 
 
@@ -21,6 +21,9 @@ const App = () => {
             <Route path='/home' element={<Home />} />
             <Route path='/search' element={<Search />} />
             <Route path='/account/*' element={<Account />} />
+            <Route path='/account/likes' element={<LikesPage />} />
+            <Route path='/account/settings' element={<LoginSettings />} />
+            
           </Routes>
       </div>
     </>
