@@ -1,20 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Search.css"
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../../components/Footer/Footer'
 
 
-const Search = ({name}) => {
-            
-  console.log(name)
+const Search = () => {
+  
 
+  const [mark, setMark] = useState("none")
   return (
     <div className='search'>
       <div className="search-container">
         <div className="search-container-info">
-          <h2>{name} </h2>{
-            
-              console.log(name)
-          }
+          <h2>Название {} </h2>
           <li>Страна {}</li>
           <li>Директор {}</li>
           <div className="film-image">
@@ -24,8 +21,8 @@ const Search = ({name}) => {
           <li>Жанры {}</li>
         </div>
         <div className="search-container-btns">
-          <button className='dislike'>dislike</button>
-          <button className='like'>like</button>
+          <button id='dislike' onClick={() => setMark("dislike")} className={mark==="dislike"?"activeD":""}>dislike</button>
+          <button id='like' onClick={() => setMark("like")} className={mark==="like"?"activeL":""}>like</button>
         </div>
       </div>
 

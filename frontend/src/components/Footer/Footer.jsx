@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Footer.css"
+import SupportUs from '../SupportUs/SupportUs';
 
 const Footer = (setShowLogin) => {
+
+  const[isOpen, setIsOpen] = useState(false);
+
+  function toggle(){
+    setIsOpen((isOpen) => !isOpen);
+  }
+
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -17,7 +25,8 @@ const Footer = (setShowLogin) => {
         <div className="footer-content-center">Пожалуйста допустите до экзамена
         </div>
         <div className="footer-content-right">
-            <button onClick={ ()=> setShowLogin(true)}>Support Us</button>
+            <button onClick={toggle}>Support Us</button>
+            {isOpen && <SupportUs/>}
         </div>
       </div>
       <hr />

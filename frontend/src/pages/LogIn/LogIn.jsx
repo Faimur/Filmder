@@ -6,36 +6,37 @@ import { useState } from 'react';
 const LogIn = () => {
 
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    login: "",
-    password: ""
-  })
+  
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   const [error, setError] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [passwordMatch, setPasswordMatch] = useState(true);
 
   const handleChange = (event) => {
-    const {name, value, type, checked} = event.target
+    const { name, value } = event.target;
     setFormData(prevFormData => ({
       ...prevFormData,
-      [name]:type==="checkbox"?checked:value
-    }))
-  }
+      [name]: value
+    }));
+  };
 
-  const handleSubmit = (event) => {
-    event.prevent.Default()
-    if(
-      login=== "" ||
-      password=== ""
-    )
-    { setError(true);}
-    else{
-      setSubmitted(true);
-      setError(false);
-      navigate('/home')
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    
+
+    // Проверяем, заполнены ли все поля и совпадают ли пароли
+    if (username === "" || password === "") {
+      setError(true);
+      return; // Прерываем функцию, если есть ошибка
     }
-  }
+
+    // Если все проверки пройдены, выполняем переадресацию
+    console.log("yes");
+    setError(false);
+    setPasswordMatch(true);
+    navigate('/home'); // Перенаправление на страницу 'home'
+  };
 
   return (
     <div className='login'>
@@ -46,10 +47,10 @@ const LogIn = () => {
         </div>
         <div className="login-container-right">
           <h3>Log In</h3>
-          <form className="login-container-right-input">
-            <input type="login" placeholder='Your login' className='input' name='login' onChange={handleChange} value={formData.login}/>
-            <input type="password"  placeholder='Your password' className='input' name="password" onChange={handleChange} value={formData.password}/>
-            <button className='submit'>Next</button>
+          <form className="login-container-right-input" onSubmit={handleSubmit}>
+            <input type="login" placeholder='Your login' className='input' name='username' onChange={(e) => setUsername(e.target.value)} value={username}/>
+            <input type="password"  placeholder='Your password' className='input' name="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
+            <button type="submit">Next</button>
 
 
           </form>

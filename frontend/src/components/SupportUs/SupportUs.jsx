@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer'
 const SupportUs = () => {
   return (
     <div className='supportUs'>
-        pleeeeease
+        <h3>pleeeeease</h3>
     </div>
   )
 }

@@ -28,22 +28,23 @@
 .search-container-btns{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: white;
+
 }
 
-.like{
-    padding: 10px;
-    border-radius: 5px;
+.search-container-btns button{
     color: white;
     background-color: #141414;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-container-btns button#like{
     border: thin solid #00DE0E;
     cursor: pointer;
 
 }
 
-.dislike{
-    padding: 10px;
-    border-radius: 5px;
+.search-container-btns button#dislike{
     color: white;
     background-color: #141414;
     border: thin solid tomato;
@@ -51,7 +52,7 @@
 
 }
 
-.like:hover{
+.search-container-btns button#like:hover{
     border-radius: 5px;
     color: white;
     background-color: #00DE0E;
@@ -59,10 +60,20 @@
 
 }
 
-.dislike:hover{
+.search-container-btns button#dislike:hover{
     border-radius: 5px;
     color: white;
     background-color: tomato;
     border: thin solid tomato;
+
+}
+
+.search-container-btns .activeL{
+    background-color: #00DE0E;
+
+}
+
+.search-container-btns .activeD{
+    background-color: tomato;
 
 }

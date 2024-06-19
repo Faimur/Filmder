@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\79636\\Desktop\\Filmder\\Backend\\Migrations\\20240616173422_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240616173422_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|C:\\Users\\79636\\Desktop\\Filmder\\Backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|c:\\users\\79636\\desktop\\filmder\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|c:\\users\\79636\\desktop\\filmder\\backend\\migrations\\20240616173422_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|solutionrelative:migrations\\20240616173422_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|C:\\Users\\79636\\Desktop\\Filmder\\Backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|c:\\users\\79636\\desktop\\filmder\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|C:\\Users\\79636\\Desktop\\Filmder\\Backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|c:\\users\\79636\\desktop\\filmder\\backend\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|C:\\Users\\79636\\Desktop\\Filmder\\Backend\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|solutionrelative:controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|c:\\users\\79636\\desktop\\filmder\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CBE0900B-B07C-478C-9172-80265C81D378}|DataBaseCreator.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "20240616173422_initialcreate.cs",
               "DocumentMoniker": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\Migrations\\20240616173422_initialcreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20240616173422_initialcreate.cs",
@@ -47,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -55,12 +59,11 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-16T17:32:01.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T17:32:01.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -68,12 +71,11 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T17:31:56.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T17:31:56.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CountriesController.cs",
               "DocumentMoniker": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\Controllers\\CountriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CountriesController.cs",
@@ -81,16 +83,11 @@
               "RelativeToolTip": "Controllers\\CountriesController.cs",
               "ViewState": "AQIAAIQAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T17:29:59.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2024-06-16T17:29:59.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\79636\\Desktop\\Filmder\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",

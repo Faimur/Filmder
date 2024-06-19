@@ -4,13 +4,14 @@ import { Route, Routes} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import LogIn from './pages/LogIn/LogIn'
 import Authorisation from './pages/Authorisation/Authorisation'
-import Search from './pages/Search/Search'
+import Search from './pages/Search/SearchPages/Search'
 import Account from './pages/Account/Account'
 import LoginSettings from './components/LoginSettings/LoginSettings'
 import LikesPage from './components/LikesPage/LikesPage'
 import SupportUs from './components/SupportUs/SupportUs'
 import UserLog from './pages/UserLog/UserLog'
 import MainPage from './components/MainPage/MainPage'
+import SearchPages1 from './pages/Search/SearchPages/SearchPages1'
 const App = () => {
 
   return (
