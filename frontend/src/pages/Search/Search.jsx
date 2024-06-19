@@ -3,7 +3,7 @@ import "./Search.css"
 import Footer from '../../components/Footer/Footer'
 
 
-const Search = ({id, name, description, tag, genre, picture, director, country}) => {
+const Search = ({name}) => {
             
   console.log(name)
 
@@ -11,17 +11,17 @@ const Search = ({id, name, description, tag, genre, picture, director, country})
     <div className='search'>
       <div className="search-container">
         <div className="search-container-info">
-          <h2>Будущее название {name} </h2>{
+          <h2>{name} </h2>{
             
               console.log(name)
           }
-          <li>Страна {country}</li>
-          <li>Директор {director}</li>
+          <li>Страна {}</li>
+          <li>Директор {}</li>
           <div className="film-image">
           </div>
-          <li>Описание {description}</li>
-          <li>Теги {tag}</li>
-          <li>Жанры {genre}</li>
+          <li>Описание {}</li>
+          <li>Теги {}</li>
+          <li>Жанры {}</li>
         </div>
         <div className="search-container-btns">
           <button className='dislike'>dislike</button>

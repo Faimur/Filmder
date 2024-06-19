@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MovieItem.css'
 import Search from '../../pages/Search/Search'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const MovieItem = ({id, name, description, tag, genre, picture, director, country}) => {
-
+  
+  const navigate = useNavigate();
+  const [movie, setMovie] = useState("All");
 
   return (
     <div className='movie-item'>
@@ -12,10 +15,14 @@ const MovieItem = ({id, name, description, tag, genre, picture, director, countr
         </div>
         <div className="movie-item-info">
             <div className="movie-item-name-info">
-                <a href="#" onClick={() =>{
+                <h3 onClick={() =>{
                   console.log(name);
-                  <Search key={id} name={name} description={description} tag={tag} genre={genre} picture={picture} director={director} country={country}/>
-                }}><h3>{name}</h3></a>
+                  movie=name;
+                  <Search name={movie}/>
+                  
+                }}>
+                {name}
+                </h3>
                 
             </div>
             <p className="film-item-description">{description}</p>

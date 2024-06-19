@@ -30,15 +30,21 @@
 }
 
 .footer-content-right button{
-    background-color: #C4FFC8;
+    background-color: #283A2A;
     color: #141414;
-    border: none;
+    border: thin solid #00DE0E;
     font-weight: 500;
     padding: 1vw 2.3vw;
     font-size: max(1vw,13px);
     border-radius: 50px;
     cursor: pointer;
 }
+
+.footer-content-right button:hover{
+    
+    background-color: #00DE0E;
+}
+
 .footer hr{
     width: 100%;
     height: 2px;

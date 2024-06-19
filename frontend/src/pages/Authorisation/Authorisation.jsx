@@ -1,10 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Authorisation.css"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Authorisation = () => {
 
   const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    login: "",
+    password: "",
+    confirmpassword:""
+  })
+
+  const [error, setError] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [passwordMatch, setPasswordMatch] = useState(true);
+
+  const handleChange = (event) => {
+    const {name, value, type, checked} = event.target
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      [name]:type==="checkbox"?checked:value
+    }))
+  }
+
+  const handleSubmit = (event) => {
+    event.prevent.Default()
+    if(
+      login=== "" ||
+      password=== "" ||
+      confirmpassword===""
+    )
+    { setError(true);}
+    else{
+      setSubmitted(true);
+      setError(false);
+    }
+    if (formData.password === formData.confirmPassword) {setPasswordMatch(true)}
+    else if (formData.confirmPassword === '') {setError(true) } 
+    else {
+         setPasswordMatch(false)
+         setSubmitted(false)
+    }
+  }
+
+  
 
   return (
     <div className='authorisation'>
@@ -15,17 +54,14 @@ const Authorisation = () => {
         </div>
         <div className="authorisation-container-right">
           <h3>Join Filmdr</h3>
-          <form className="authorisation-container-right-input" id='authorisation-container-right-input'>
-            <input type="text" id="Alogin" placeholder='Your login' required />
-            <input type="password" id='password1' placeholder='Your password' required/>
-            <input type="password" id='password2' placeholder='Confirm password' required/>
+          <form className="authorisation-container-right-input" id='authorisation-container-right-input' onSubmit={handleSubmit}>
+            <input type="login" placeholder='Your login' className='input' name='login' onChange={handleChange} value={formData.login}/>
+
+            <input type="password"  placeholder='Your password' className='input' name="password" onChange={handleChange} value={formData.password}/>
+            <input type="password"  placeholder='Comfirm password' className='input' name="confirmpassword" onChange={handleChange} value={formData.confirmpassword}/>
+            
             <div className="authorisation-container-right-input-wrong-password"></div>
-            <button type="submit" onClick={() => {
-              /*let data1 = document.querySelector('.authorisation-container-right-input#password1').val();
-              let data2 = document.querySelector('.authorisation-container-right-input#password2').val();
-              if(data1 != data2) {document.querySelector('.authorisation-container-right-input-wrong-password').innerHTML = 'пароли не совпадают'}
-              */navigate('/home')
-              }}>Next</button>
+            <button onClick={submitted?<a href='http://localhost:5173/home'/>:<></>}>Next</button>
           </form>
           <h4>Already a member?</h4>
           <button onClick={() => navigate('/')}>Log In</button>
