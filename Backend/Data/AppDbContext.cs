@@ -8,12 +8,12 @@ namespace DataBase.Data
         : base(options)
         {
         }
-        private IConfiguration _configuration;
+        //private IConfiguration _configuration;
 
-        public AppDbContext(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        //public AppDbContext(IConfiguration configuration)
+        //{
+        //    _configuration = configuration;
+        //}
         public DbSet<User> Users { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Tag> Tags { get; set; }
@@ -26,11 +26,7 @@ namespace DataBase.Data
             modelBuilder.Entity<Liked>()
                 .HasNoKey();
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var connectionString = _configuration.GetConnectionString("DefaultConnection");
-            optionsBuilder.UseSqlServer(connectionString);
-        }
+      
         
     }
 }
