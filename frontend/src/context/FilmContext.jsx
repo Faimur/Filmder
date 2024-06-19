@@ -1,14 +1,13 @@
 import { createContext } from "react";
-import { movie_list } from "../assets/movies";
+import { movie_list } from "../assets/genre";
 
-export const FilmContext = createContext(null)
+//export const FilmContext = createContext(null)
 
 const FilmContextProvider = (props) =>{
 
 
-
     const contextValue = {
-       movie_list 
+        movie_list
     }
     
     return(

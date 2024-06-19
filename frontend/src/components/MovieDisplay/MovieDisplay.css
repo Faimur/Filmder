@@ -1,0 +1,20 @@
+.film-display{
+    padding: 20px 0px;
+    color: #00DE0E;
+    gap: 20px;
+}
+
+.film-display hr{
+    width: 100%;
+    margin: 50px 0px;
+    height: 4px;
+    background-color: #00DE0E;
+    border: none;
+}
+
+.movie-item hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #00DE0E;
+    border: none;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 
-const Footer = () => {
+const Footer = (setShowLogin) => {
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-content-center">Пожалуйста допустите до экзамена
         </div>
         <div className="footer-content-right">
-            <button>Support Us</button>
+            <button onClick={ ()=> setShowLogin(true)}>Support Us</button>
         </div>
       </div>
       <hr />

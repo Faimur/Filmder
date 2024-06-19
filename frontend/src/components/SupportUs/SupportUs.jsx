@@ -4,8 +4,8 @@ import Footer from '../Footer/Footer'
 
 const SupportUs = () => {
   return (
-    <div>
-        
+    <div className='supportUs'>
+        pleeeeease
     </div>
   )
 }

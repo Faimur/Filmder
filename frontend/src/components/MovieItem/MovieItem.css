@@ -1,0 +1,29 @@
+.movie-item{
+    display: flex;
+    color: #00DE0E;
+    gap: 20px;
+    margin: 10px 0px;
+    padding-left: 20px;
+    padding: 20px 20px;
+    background-color: #283A2A;
+}
+
+.film-item-filter{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.film-item-information{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.movie-item-img-container img{
+    width: 100px;
+    height: 133px;
+}
+ .movie-item h3{
+    cursor: pointer;
+ }
