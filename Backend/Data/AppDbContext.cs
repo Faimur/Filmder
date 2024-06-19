@@ -1,17 +1,5 @@
-﻿using DataBase.Data;
-using DataBase.Models;
+﻿using DataBase.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using Microsoft.AspNetCore.DataProtection.KeyManagement;
-using System.Diagnostics.Metrics;
-using System.Reflection.Emit;
 namespace DataBase.Data
 {
     public class AppDbContext : DbContext
@@ -20,7 +8,7 @@ namespace DataBase.Data
         : base(options)
         {
         }
-        private readonly IConfiguration _configuration;
+        private IConfiguration _configuration;
 
         public AppDbContext(IConfiguration configuration)
         {
@@ -43,5 +31,6 @@ namespace DataBase.Data
             var connectionString = _configuration.GetConnectionString("DefaultConnection");
             optionsBuilder.UseSqlServer(connectionString);
         }
+        
     }
 }
